@@ -1,13 +1,22 @@
+/**
+ * A simple gallery app with vanilla JS.
+ *
+ * This is a simple gallery app that swaps images when
+ * clicking on thumbnails. It's meant to fufill the
+ * requirements of V School's pre-course project.
+ *
+ * @author Jason Bobich
+ */
 ( function galleryApp() {
 
 	const app = document.getElementById( 'app' );
 
 	const imageTitles = [
-		'Slanted Forest',
-		'Taking a Photo',
-		'Crashing Wave',
-		'Sumertime Vibes',
-		'Forest of Fall'
+		'Slanted Forest',  // 1.jpg
+		'Taking a Photo',  // 2.jpg
+		'Crashing Wave',   // 3.jpg
+		'Sumertime Vibes', // 4.jpg
+		'Forest of Fall'   // 5.jpg
 	];
 
 	/**
