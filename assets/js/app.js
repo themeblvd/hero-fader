@@ -22,10 +22,6 @@
 	/**
 	 * Displays the currently selected image in the main
 	 * image container.
-	 *
-	 * Note: The @param event defaults to a `false` to meet
-	 * assignment requirement of including a boolean... would
-	 * have probably used `null`, otherwise.
 	 */
 	function displayImage( event = false ) {
 
