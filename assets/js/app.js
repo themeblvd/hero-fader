@@ -57,7 +57,7 @@
 
 		imgContainer.innerHTML = '';
 
-		imgContainer.className = 'img-container';
+		imgContainer.className = 'img-container'; // Removes `loaded` class.
 
 		let title = document.createElement( 'h2' );
 
@@ -74,7 +74,7 @@
 		imgContainer.appendChild( img );
 
 		img.addEventListener( 'load', function addImgClass() {
-			imgContainer.className = 'img-container loaded';
+			imgContainer.className += ' loaded'; // Adding `loaded` class fades in image.
 		} );
 
 	}
