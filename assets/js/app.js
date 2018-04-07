@@ -107,6 +107,8 @@
 
 		thumbImg.alt = imageTitles[ i ];
 
+		thumbImg.setAttribute( 'srcset', `assets/img/${i + 1}-thumb.jpg 1x, assets/img/${i + 1}-thumb@2x.jpg 2x` );
+
 		item.appendChild( thumbImg );
 
 	}
