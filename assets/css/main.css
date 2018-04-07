@@ -16,6 +16,7 @@ body {
 /* Site Title */
 .site-title {
 	background: #222;
+	border-radius: 2px;
 	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
 	color: #fff;
 	font-size: .75em;
