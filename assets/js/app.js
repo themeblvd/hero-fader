@@ -20,13 +20,19 @@
 	 */
 	function displayImage( event = false ) {
 
+		// Our app's markup must be ready.
+
+		if ( ! navItems || ! imgContainer ) {
+
+			return;
+
+		}
+
 		// Update `active` nav item.
 
-		let navItems = nav.getElementsByTagName( 'li' );
+		for ( let i = 0; i < navItems.length; i++ ) {
 
-		for ( let i = 0; i < items.length; i++ ) {
-
-			items[ i ].className = '';
+			navItems[ i ].className = '';
 
 		}
 
@@ -108,11 +114,11 @@
 
 	// Change active image, when clicking a thumbnail.
 
-	let items = nav.getElementsByTagName( 'li' );
+	const navItems = nav.getElementsByTagName( 'li' );
 
-	for ( let i = 0; i < items.length; i++ ) {
+	for ( let i = 0; i < navItems.length; i++ ) {
 
-		items[ i ].addEventListener( 'click', displayImage );
+		navItems[ i ].addEventListener( 'click', displayImage );
 
 	}
 
