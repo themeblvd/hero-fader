@@ -1,5 +1,7 @@
 # Pre-Course Project for V School
 
+![Project Screenshot](https://raw.githubusercontent.com/themeblvd/vs-precourse/master/screenshot.jpg)
+
 This is a static website with a simple gallery app written with vanilla JavaScript, meant to meet the following requirements.
 
 * HTML
