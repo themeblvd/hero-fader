@@ -2,7 +2,7 @@
 
 	const app = document.getElementById( 'app' );
 
-	const images = [
+	const imageTitles = [
 		'Slanted Forest',
 		'Taking a Photo',
 		'Crashing Wave',
@@ -50,7 +50,7 @@
 
 		let title = document.createElement( 'h2' );
 
-		title.textContent = images[ index ];
+		title.textContent = imageTitles[ index ];
 
 		imgContainer.appendChild( title );
 
@@ -58,7 +58,7 @@
 
 		img.src = `assets/img/${index + 1}.jpg`;
 
-		img.alt = images[ index ];
+		img.alt = imageTitles[ index ];
 
 		imgContainer.appendChild( img );
 
@@ -88,7 +88,7 @@
 
 	app.appendChild( nav );
 
-	for ( let i = 0; i < images.length; i++ ) {
+	for ( let i = 0; i < imageTitles.length; i++ ) {
 
 		let item = document.createElement( 'li' );
 
@@ -100,7 +100,7 @@
 
 		thumbImg.src = `assets/img/${i + 1}-thumb.jpg`;
 
-		thumbImg.alt = images[ i ];
+		thumbImg.alt = imageTitles[ i ];
 
 		item.appendChild( thumbImg );
 
