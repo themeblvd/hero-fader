@@ -23,17 +23,13 @@
 		// Our app's markup must be ready.
 
 		if ( ! navItems || ! imgContainer ) {
-
 			return;
-
 		}
 
 		// Update `active` nav item.
 
 		for ( let i = 0; i < navItems.length; i++ ) {
-
 			navItems[ i ].className = '';
-
 		}
 
 		let activeNavItem;
@@ -69,9 +65,7 @@
 		imgContainer.appendChild( img );
 
 		img.addEventListener( 'load', function addImgClass() {
-
 			imgContainer.className = 'img-container loaded';
-
 		} );
 
 	}
@@ -117,9 +111,7 @@
 	const navItems = nav.getElementsByTagName( 'li' );
 
 	for ( let i = 0; i < navItems.length; i++ ) {
-
 		navItems[ i ].addEventListener( 'click', displayImage );
-
 	}
 
 	// Add active image container and display first image.
