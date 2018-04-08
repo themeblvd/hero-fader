@@ -118,11 +118,11 @@ body {
 	letter-spacing: 3px;
 	position: absolute;
 	top: 50%;
-	left: 50%;
+	right: 0;
+	left: 0;
 	text-align: center;
 	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-	transform: translate(-50%, -50%);
-	width: 100%;
+	transform: translate(0, -50%);
 	z-index: 1;
 }
 .img-container img {
@@ -138,9 +138,9 @@ body {
 	.img-container {
 		position: absolute;
 		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 100%;
+		right: 0;
+		left: 0;
+		transform: translate(0, -50%);
 		z-index: 1;
 	}
 	.img-container h2 {
