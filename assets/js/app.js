@@ -34,7 +34,7 @@
 		// Update `active` nav item.
 
 		for ( let i = 0; i < navItems.length; i++ ) {
-			navItems[ i ].className = '';
+			navItems[ i ].setAttribute( 'class', '' );
 		}
 
 		let activeNavItem;
@@ -45,7 +45,7 @@
 			activeNavItem = navItems[ 0 ]; // Defaults to first item.
 		}
 
-		activeNavItem.className = 'active';
+		activeNavItem.setAttribute( 'class', 'active' );
 
 		// Update the image container.
 
@@ -53,7 +53,7 @@
 
 		imgContainer.innerHTML = '';
 
-		imgContainer.className = 'img-container'; // Removes `loaded` class.
+		imgContainer.setAttribute( 'class', 'img-container' ); // Removes `loaded` class, if exists.
 
 		let title = document.createElement( 'h2' );
 
@@ -63,9 +63,9 @@
 
 		let img = document.createElement( 'img' );
 
-		img.src = `assets/img/${index + 1}.jpg`;
+		img.setAttribute( 'src', `assets/img/${index + 1}.jpg` );
 
-		img.alt = imageTitles[ index ];
+		img.setAttribute( 'alt', imageTitles[ index ] );
 
 		imgContainer.appendChild( img );
 
@@ -79,7 +79,7 @@
 
 	const title = document.createElement( 'h1' );
 
-	title.className = 'site-title';
+	title.setAttribute( 'class', 'site-title' );
 
 	title.textContent = document.title;
 
@@ -89,7 +89,7 @@
 
 	const nav = document.createElement( 'ul' );
 
-	nav.className = 'nav';
+	nav.setAttribute( 'class', 'nav' );
 
 	app.appendChild( nav );
 
@@ -103,9 +103,9 @@
 
 		let thumbImg = document.createElement( 'img' );
 
-		thumbImg.src = `assets/img/${i + 1}-thumb.jpg`;
+		thumbImg.setAttribute( 'src', `assets/img/${i + 1}-thumb.jpg` );
 
-		thumbImg.alt = imageTitles[ i ];
+		thumbImg.setAttribute( 'alt', imageTitles[ i ] );
 
 		thumbImg.setAttribute( 'srcset', `assets/img/${i + 1}-thumb.jpg 1x, assets/img/${i + 1}-thumb@2x.jpg 2x` );
 
@@ -125,7 +125,7 @@
 
 	const imgContainer = document.createElement( 'figure' );
 
-	imgContainer.className = 'img-container';
+	imgContainer.setAttribute( 'class', 'img-container' );
 
 	app.appendChild( imgContainer );
 
