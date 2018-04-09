@@ -47,9 +47,13 @@
 
 		activeNavItem.setAttribute( 'class', 'active' );
 
-		// Update the image container.
+		// Determine imageTitles array index of active item.
 
-		let index = activeNavItem.dataset.itemNum - 1;
+		let index = activeNavItem.getAttribute( 'data-item-num' ); // Initial value should always be at least 1.
+
+		index = parseInt( index ) - 1;
+
+		// Update the image container.
 
 		imgContainer.innerHTML = '';
 
